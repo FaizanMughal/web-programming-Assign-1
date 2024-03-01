@@ -1,0 +1,143 @@
+
+@font-face {
+    font-family: 'Ubuntu-B'; 
+    src: url('C:\\Users\\ATOnline\\Desktop\\ubuntu-font-family-0.83\\Ubuntu-B.ttf') format('ttf');
+  }
+
+@font-face {
+    font-family: 'Ubuntu-BI'; 
+    src: url('C:\\Users\\ATOnline\\Desktop\\ubuntu-font-family-0.83\\Ubuntu-BI.ttf') format('ttf');
+  }
+
+@font-face {
+    font-family: 'Ubuntu-L'; 
+    src: url('C:\\Users\\ATOnline\\Desktop\\ubuntu-font-family-0.83\\Ubuntu-L.ttf') format('ttf');
+  }
+
+@font-face {
+    font-family: 'Ubuntu-LI'; 
+    src: url('C:\\Users\\ATOnline\\Desktop\\ubuntu-font-family-0.83\\Ubuntu-LI.ttf') format('ttf');
+  }
+
+@font-face {
+    font-family: 'Ubuntu-R'; 
+    src: url('C:\\Users\\ATOnline\\Desktop\\ubuntu-font-family-0.83\\Ubuntu-R.ttf') format('ttf');
+  }
+
+@font-face {
+    font-family: 'Ubuntu-RI'; 
+    src: url('C:\\Users\\ATOnline\\Desktop\\ubuntu-font-family-0.83\\Ubuntu-RI.ttf') format('ttf');
+  } 
+
+img{
+    border-radius: 50%;
+}
+
+#profilepic{
+    height: 100px;
+    width: 100px;
+}
+
+#namedesc{
+    background-color: darkslategray;
+    width: 600px;
+}
+
+#name,#position,#desc{ 
+    position: relative; 
+    color: white;
+}
+
+#socialinfo{
+    height: 70%;
+}
+
+#email{
+    height: 70%;
+    width: 200px;
+}
+
+#softec{
+    list-style-type: square;
+}
+
+table{
+    height: 400px;
+}
+
+td{
+    border:none;
+}
+
+h1{
+    position: relative;
+    left: 10px; 
+    color: white; 
+    font-family:'Ubuntu-R'; 
+    font-size: xx-large;
+}
+
+h2{
+    position: relative;
+    top: -20px;
+    left: 10px; 
+    color: black; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: x-large;
+}
+
+#position{
+    position: relative;
+    top: -20px;
+    left: 10px; 
+    color: white; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: large;
+}
+
+ul{
+    position: relative;
+    list-style-type: none;
+    left: -30px;
+}
+
+#right{
+    position: relative;
+    width: 580px;
+    top: -40px;
+    left: -10px;
+    height: 1px;
+    background-color: black;
+    border-color: black;
+    border-radius: 5%;
+}
+
+#left{
+    position: relative;
+    width: 170px;
+    top: -133px;
+    left: -10px;
+    height: 1px;
+    background-color: black;
+    border-color: black;
+    border-radius: 5%;
+}
+
+
+#headerinfo{
+    position: relative;
+    width: 550px;
+    left: 10px; 
+    color: white;
+    font-family: 'Ubuntu-R';
+    font-size: small;
+}
+
+p,li{
+    align-content: flex-start;
+    position: relative;
+    left: 0px; 
+    color: darkslategray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: small;
+} 

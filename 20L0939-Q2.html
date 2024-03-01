@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            People Per Hour
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(window).resize(function (){
+                if($(".menu-list").width()>$(window).width())
+                {
+                    $(".options").hide();
+                    $("#how").hide();
+                    $("#login").hide();
+                    $("#signup").hide();
+                    $("#freelance").hide();
+                    $("#left").show();
+                    $("#right").show();
+                }
+                else
+                {
+                    $(".options").show();
+                    $("#how").show();
+                    $("#login").show();
+                    $("#signup").show();
+                    $("#freelance").show();
+                    $("#left").hide();
+                    $("#right").hide();
+                }
+                if($(".panel").width()<=$(".menu-list").width())
+                {
+                    $(".options").hide();
+                    $("#how").hide();
+                    $("#login").hide();
+                    $("#signup").hide();
+                    $("#freelance").hide();
+                }
+                else
+                {
+                    $(".options").show();
+                    $("#how").show();
+                    $("#login").show();
+                    $("#signup").show();
+                    $("#freelance").show();
+                }
+                
+            })
+            $(window).ready(function(){
+                $("#left").click(function(){
+                $(".menu-list").scrollLeft($(".menu-list").scrollLeft()-100);
+                });
+
+                $("#right").click(function(){
+                    $(".menu-list").scrollLeft($(".menu-list").scrollLeft()+100);
+                });
+
+                $(".menu-list > li").hover(function(){
+                    $(this).find(".categories").show();
+                },
+                function(){
+                    $(this).find(".categories").hide();
+                })
+
+                $("#slide1").click(function(){
+                    $("#slide1").css("color","rgb(253, 122, 104)");
+                    $(".page-advertisement").css("color","rgb(253, 122, 104)");
+                    $(".search-button").css("background-color","rgb(253, 122, 104)");
+                    $("#slide2").css("color","lightgray");
+                    $("#slide3").css("color","lightgray");
+                    $("#slide4").css("color","lightgray");
+                    $("#slide5").css("color","lightgray");
+                })
+                $("#slide2").click(function(){
+                    $("#slide2").css("color","rgb(231, 149, 10)");
+                    $(".page-advertisement").css("color","rgb(231, 149, 10)");
+                    $(".search-button").css("background-color","rgb(231, 149, 10)");
+                    $("#slide1").css("color","lightgray");
+                    $("#slide3").css("color","lightgray");
+                    $("#slide4").css("color","lightgray");
+                    $("#slide5").css("color","lightgray");
+                })
+                $("#slide3").click(function(){
+                    $("#slide3").css("color","rgb(145, 33, 108)");
+                    $(".page-advertisement").css("color","rgb(145, 33, 108)");
+                    $(".search-button").css("background-color","rgb(145, 33, 108)");
+                    $("#slide2").css("color","lightgray");
+                    $("#slide1").css("color","lightgray");
+                    $("#slide4").css("color","lightgray");
+                    $("#slide5").css("color","lightgray");
+                })
+                $("#slide4").click(function(){
+                    $("#slide4").css("color","rgb(224, 33, 27)");
+                    $(".page-advertisement").css("color","rgb(224, 33, 27)");
+                    $(".search-button").css("background-color","rgb(224, 33, 27)");
+                    $("#slide2").css("color","lightgray");
+                    $("#slide3").css("color","lightgray");
+                    $("#slide1").css("color","lightgray");
+                    $("#slide5").css("color","lightgray");
+                })
+                $("#slide5").click(function(){
+                    $("#slide5").css("color","rgb(185, 37, 40)");
+                    $(".page-advertisement").css("color","rgb(185, 37, 40)");
+                    $(".search-button").css("background-color","rgb(185, 37, 40)");
+                    $("#slide2").css("color","lightgray");
+                    $("#slide3").css("color","lightgray");
+                    $("#slide4").css("color","lightgray");
+                    $("#slide1").css("color","lightgray");
+                })
+            })
+        </script> 
+    </head>
+    <body class="body-over">
+        <div>
+            <header>
+                <div class="panel">
+                    <img src="logo.png" title="Logo" class="logo">
+                </div>
+                <div class="options">
+                    <label for="dropdown">
+                        <select id="dropdown" name="options" class="search">
+                            <option>Search Offers</option>
+                            <option>Search Freelancers</option>
+                            <option>Search Projects</option>
+                        </select>
+                    </label>
+                    <a id="how" href="https://www.peopleperhour.com/how-it-works" class="topright-buttons">HOW IT WORKS</a>
+                    <a id="login" href="https://www.peopleperhour.com/site/login">LOG IN</a>
+                    <a id="signup" href="https://www.peopleperhour.com/site/register" class="topright-buttons">SIGN UP</a>
+                    <a id="freelance" href="https://www.peopleperhour.com/site/register#freelancer" class="topright-buttons">FREELANCER?</a>
+                </div>
+                <div class="menu">
+                    <ul class="menu-list">
+                       <li class="list-item">
+                            <p>Technology & Programming</p>
+                            <div class="categories">
+                                <div class="categories-menu">
+                                    <div><a href="#">Programming & Coding</a></div>
+                                    <div><a href="#">Data Science & Analysis</a></div>
+                                    <div><a href="#">Databases</a></div>
+                                    <div><a href="#">Social Media App</a></div>
+                                    <div><a href="#">Software Testing</a></div>
+                                    <div><a href="#">Mobile App Development</a></div>
+                                    <div><a href="#">Email Template Development</a></div>
+                                    <div><a href="#">CMS Development</a></div>
+                                    <div><a href="#">eCommerce CMS Development</a></div>
+                                    <div><a href="#">ERP/CRM Development</a></div>
+                                    <div><a href="#">Website Development</a></div>
+                                    <div><a href="#">Game Development</a></div>
+                                    <div><a href="#">All Technology & Programming Services</a></div>
+                                </div>
+                            </div>
+                        </li>   
+                        <li class="list-item">
+                            <p>Writing & Translation</p>
+                            <div class="categories">
+                                <div class="categories-menu">
+                                    <div><a href="#">Programming & Coding</a></div>
+                                    <div><a href="#">Data Science & Analysis</a></div>
+                                    <div><a href="#">Databases</a></div>
+                                    <div><a href="#">Social Media App</a></div>
+                                    <div><a href="#">Software Testing</a></div>
+                                    <div><a href="#">Mobile App Development</a></div>
+                                    <div><a href="#">Email Template Development</a></div>
+                                    <div><a href="#">CMS Development</a></div>
+                                    <div><a href="#">eCommerce CMS Development</a></div>
+                                    <div><a href="#">ERP/CRM Development</a></div>
+                                    <div><a href="#">Website Development</a></div>
+                                    <div><a href="#">Game Development</a></div>
+                                    <div><a href="#">All Technology & Programming Services</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <p>Design</p>
+                            <div class="categories">
+                                <div class="categories-menu">
+                                    <div><a href="#">Programming & Coding</a></div>
+                                    <div><a href="#">Data Science & Analysis</a></div>
+                                    <div><a href="#">Databases</a></div>
+                                    <div><a href="#">Social Media App</a></div>
+                                    <div><a href="#">Software Testing</a></div>
+                                    <div><a href="#">Mobile App Development</a></div>
+                                    <div><a href="#">Email Template Development</a></div>
+                                    <div><a href="#">CMS Development</a></div>
+                                    <div><a href="#">eCommerce CMS Development</a></div>
+                                    <div><a href="#">ERP/CRM Development</a></div>
+                                    <div><a href="#">Website Development</a></div>
+                                    <div><a href="#">Game Development</a></div>
+                                    <div><a href="#">All Technology & Programming Services</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <p>Digital Marketing</p>
+                            <div class="categories">
+                                <div class="categories-menu">
+                                    <div><a href="#">Programming & Coding</a></div>
+                                    <div><a href="#">Data Science & Analysis</a></div>
+                                    <div><a href="#">Databases</a></div>
+                                    <div><a href="#">Social Media App</a></div>
+                                    <div><a href="#">Software Testing</a></div>
+                                    <div><a href="#">Mobile App Development</a></div>
+                                    <div><a href="#">Email Template Development</a></div>
+                                    <div><a href="#">CMS Development</a></div>
+                                    <div><a href="#">eCommerce CMS Development</a></div>
+                                    <div><a href="#">ERP/CRM Development</a></div>
+                                    <div><a href="#">Website Development</a></div>
+                                    <div><a href="#">Game Development</a></div>
+                                    <div><a href="#">All Technology & Programming Services</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <p>Video, Photo & Image</p>
+                            <div class="categories">
+                                <div class="categories-menu">
+                                    <div><a href="#">Programming & Coding</a></div>
+                                    <div><a href="#">Data Science & Analysis</a></div>
+                                    <div><a href="#">Databases</a></div>
+                                    <div><a href="#">Social Media App</a></div>
+                                    <div><a href="#">Software Testing</a></div>
+                                    <div><a href="#">Mobile App Development</a></div>
+                                    <div><a href="#">Email Template Development</a></div>
+                                    <div><a href="#">CMS Development</a></div>
+                                    <div><a href="#">eCommerce CMS Development</a></div>
+                                    <div><a href="#">ERP/CRM Development</a></div>
+                                    <div><a href="#">Website Development</a></div>
+                                    <div><a href="#">Game Development</a></div>
+                                    <div><a href="#">All Technology & Programming Services</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                           <p>Business</p>
+                           <div class="categories">
+                            <div class="categories-menu">
+                                <div><a href="#">Programming & Coding</a></div>
+                                <div><a href="#">Data Science & Analysis</a></div>
+                                <div><a href="#">Databases</a></div>
+                                <div><a href="#">Social Media App</a></div>
+                                <div><a href="#">Software Testing</a></div>
+                                <div><a href="#">Mobile App Development</a></div>
+                                <div><a href="#">Email Template Development</a></div>
+                                <div><a href="#">CMS Development</a></div>
+                                <div><a href="#">eCommerce CMS Development</a></div>
+                                <div><a href="#">ERP/CRM Development</a></div>
+                                <div><a href="#">Website Development</a></div>
+                                <div><a href="#">Game Development</a></div>
+                                <div><a href="#">All Technology & Programming Services</a></div>
+                            </div>
+                        </div>
+                        </li>
+                        <li class="list-item">
+                            <p>Music & Audio</p>
+                            <div class="categories">
+                                <div class="categories-menu">
+                                    <div><a href="#">Programming & Coding</a></div>
+                                    <div><a href="#">Data Science & Analysis</a></div>
+                                    <div><a href="#">Databases</a></div>
+                                    <div><a href="#">Social Media App</a></div>
+                                    <div><a href="#">Software Testing</a></div>
+                                    <div><a href="#">Mobile App Development</a></div>
+                                    <div><a href="#">Email Template Development</a></div>
+                                    <div><a href="#">CMS Development</a></div>
+                                    <div><a href="#">eCommerce CMS Development</a></div>
+                                    <div><a href="#">ERP/CRM Development</a></div>
+                                    <div><a href="#">Website Development</a></div>
+                                    <div><a href="#">Game Development</a></div>
+                                    <div><a href="#">All Technology & Programming Services</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <p>Marketing, Branding & Sales</p>
+                            <div class="categories">
+                                <div class="categories-menu">
+                                    <div><a href="#">Programming & Coding</a></div>
+                                    <div><a href="#">Data Science & Analysis</a></div>
+                                    <div><a href="#">Databases</a></div>
+                                    <div><a href="#">Social Media App</a></div>
+                                    <div><a href="#">Software Testing</a></div>
+                                    <div><a href="#">Mobile App Development</a></div>
+                                    <div><a href="#">Email Template Development</a></div>
+                                    <div><a href="#">CMS Development</a></div>
+                                    <div><a href="#">eCommerce CMS Development</a></div>
+                                    <div><a href="#">ERP/CRM Development</a></div>
+                                    <div><a href="#">Website Development</a></div>
+                                    <div><a href="#">Game Development</a></div>
+                                    <div><a href="#">All Technology & Programming Services</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <p>Social Media</p>
+                            <div class="categories">
+                                <div class="categories-menu">
+                                    <div><a href="#">Programming & Coding</a></div>
+                                    <div><a href="#">Data Science & Analysis</a></div>
+                                    <div><a href="#">Databases</a></div>
+                                    <div><a href="#">Social Media App</a></div>
+                                    <div><a href="#">Software Testing</a></div>
+                                    <div><a href="#">Mobile App Development</a></div>
+                                    <div><a href="#">Email Template Development</a></div>
+                                    <div><a href="#">CMS Development</a></div>
+                                    <div><a href="#">eCommerce CMS Development</a></div>
+                                    <div><a href="#">ERP/CRM Development</a></div>
+                                    <div><a href="#">Website Development</a></div>
+                                    <div><a href="#">Game Development</a></div>
+                                    <div><a href="#">All Technology & Programming Services</a></div>
+                                </div>
+                            </div>
+                        </li>          
+                    </ul>
+                    <button id="left" class="fa fa-angle-left">
+                    </button>
+                    <button id="right" class="fa fa-anlge-right">
+                        &gt;
+                    </button>                  
+                </div>
+            </header>
+            <div class="whole-advert">
+                <div class="advert">
+                    <div><h1 class="page-advertisement">Make bright ideas happen</h1></div>
+                    <div><h3 class="subadvert">Access global talent on the freelancer website trusted by over 1 million businesses worldwide.</h3></div>
+                    <div>
+                        <form type="/search" method="get" class="search-form">
+                            <input type="text" name="search" class="search-field" placeholder="Try">
+                            <button type="submit" title="Sea" class="fa fa-search search-button"></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="rest-advert">
+                    <div class="img-advert">
+                        <img src="https://dw3i9sxi97owk.cloudfront.net/homepageRevampA3/HeroImage/instance-1/hero-instance-1--desktop.webp" title="Image" class="advert-img">
+                    </div>
+                    <div class="profile-card">
+                        <div>
+                            <img src="https://dw3i9sxi97owk.cloudfront.net/homepageRevampA3/HeroImage/instance-6/profile-pic/profile-pic.webp" title="Profile Pic" class="profile-picture">
+                        </div>
+                        <h3 class="designation">Graphic Designer</h3>
+                        <p class="name">Frankie Albion</p>
+                        <p class></p>
+                    </div>
+                    <div>
+                        <ul class="slides">
+                            <li>
+                                <button type="submit" id="slide1" title="Slide 1" class="slides-button" style="color:  rgb(74, 57, 172)">&#9679;</button>
+                            </li>
+                            <li> 
+                                <button type="submit" id="slide2" title="Slide 2" class="slides-button">&#9679;</button>
+                            </li>
+                            <li>
+                                <button type="submit" id="slide3" title="Slide 3" class="slides-button">&#9679;</button>
+                            </li>
+                            <li>
+                                <button type="submit" id="slide4" title="Slide 4" class="slides-button">&#9679;</button>
+                            </li>
+                            <li>
+                                <button type="submit" id="slide5" title="Slide 5" class="slides-button">&#9679;</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
